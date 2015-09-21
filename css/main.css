@@ -40,7 +40,7 @@ a { text-decoration:none; }
 	.w50 { width:100%; }
 	.w25.w25 { width:50%; }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
 	.w25.w25 { width:100%; padding-right:0; }
 }
 .grid { clear:both; padding:10px; }
