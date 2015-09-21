@@ -20,7 +20,7 @@ var AssignmentsGrid = React.createClass({
 			assignmentArr.push(React.createElement(
 				'div',
 				{ className: 'col w25' },
-				React.createElement(Card, { link: assignment.url, title: assignment.title, description: assignment.description })
+				React.createElement(Card, { link: assignment.url, secondLink: assignment.url2, title: assignment.title, description: assignment.description })
 			));
 			console.log(assignment.title, assignment.url);
 		});
@@ -38,6 +38,14 @@ var AssignmentsGrid = React.createClass({
 	displayName: 'Card',
 
 	render: function render() {
+		var secondLink = React.createElement(
+			'a',
+			{ className: 'card-btn', href: this.props.secondLink },
+			'Presentation'
+		);
+		if (this.props.secondLink === undefined) {
+			secondLink = "";
+		}
 		return React.createElement(
 			'a',
 			{ href: this.props.link },
@@ -53,7 +61,13 @@ var AssignmentsGrid = React.createClass({
 					'p',
 					{ className: 'card-info' },
 					this.props.description
-				)
+				),
+				React.createElement(
+					'a',
+					{ className: 'card-btn', href: this.props.link },
+					'View Assignment'
+				),
+				secondLink
 			)
 		);
 	}
@@ -126,11 +140,5 @@ var AssignmentsGrid = React.createClass({
 		);
 	}
 });
-
 React.render(React.createElement(AssignmentsGrid, null), document.getElementById('assignment-cards'));
-//
-// React.render(
-//   	<Card cardType={"square"} cardWidth={"w25"} link={"google.com"}/>,
-//   	document.getElementById('assignment-cards')
-// );
 //# sourceMappingURL=all.js.map

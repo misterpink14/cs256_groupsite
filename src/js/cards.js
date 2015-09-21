@@ -13,7 +13,7 @@ var AssignmentsGrid = React.createClass({
   	render: function() {
   		var assignmentArr = [];
   		this.state.assignments.forEach(function (assignment) {
-  			assignmentArr.push(<div className="col w25"><Card link={assignment.url} title={assignment.title} description={assignment.description} /></div>);
+  			assignmentArr.push(<div className="col w25"><Card link={assignment.url} secondLink={assignment.url2} title={assignment.title} description={assignment.description} /></div>);
   			console.log(assignment.title, assignment.url);
   		});
   		if (this.state.addNewCard === true) {
@@ -28,11 +28,17 @@ var AssignmentsGrid = React.createClass({
 }),
 Card = React.createClass({
   	render: function() {
+  		var secondLink = <a className="card-btn" href={this.props.secondLink}>Presentation</a>;
+	  		if (this.props.secondLink === undefined) {
+  			secondLink = "";
+  		}
 		return (
 		  	<a href={this.props.link}>
 				<div className="card">
 					<h1 className="card-title">{this.props.title}</h1>
 					<p className="card-info">{this.props.description}</p>
+					<a className="card-btn" href={this.props.link}>View Assignment</a>
+					{secondLink}
 		  		</div>
 		  	</a>
 		);
