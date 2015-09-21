@@ -1,0 +1,60 @@
+@charset "utf-8";
+/****************************************
+	/css/main.css
+****************************************/
+*, *::before, *::after { box-sizing:inherit; }
+body,
+html { box-sizing:border-box; background-color:#f1eeea; height:100vh; }
+body { background-color:#E4E2DA; color:#21201E; font:16px/1.45 "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; }
+body, html, li, ul, h1, h2, h3, p { padding:0px; margin:0; }
+li, ul { list-style:none; }
+a { text-decoration:none; }
+/*********************
+	header
+*********************/
+.pageHeader { width:100%; position:relative; z-index:1; }
+.pageTitle { display:block; font-family:'Pacifico'; font-size:50px; text-align:center;  }
+/********************
+	main
+********************/
+.card-title { display:block; font-weight:900; font-size:40px; text-align:center; margin-top:15px; padding-top:20px; padding-bottom:20px; border-top:1px solid #21201E; border-bottom:1px solid #21201E; max-width:100%;}
+.card-info { font-weight:600; margin-top:20px; text-align:center; max-width:100%;}
+.card { color:#21201E; border-radius:6px; box-shadow:0px 1px 1px rgba(0, 0, 0, .4); background-color:#fff; min-height:50px; padding:20px; width:100%; height:400px; }
+.card a { color:inherit; height:100%; width:100%; }
+.card:hover { background-color:#0C5C7D; color:#fff;}
+.page { margin:0 auto; width:1200px; clear:both; }
+@media only screen and (max-width:1241px) {
+	.page { margin-left:20px; margin-right:20px; width:auto; }
+}
+/*****************
+	grid
+*****************/
+.col { float:left; margin-top:20px; }
+.col [class*="container"]:not(:first-child) { margin-top:20px; }
+.col:not(:last-child) { padding-right:20px; }
+.col.w50 + .col.w50,
+.col.w100 { padding-right:0px; }
+@media only screen and (max-width:1000px) {
+	.w50 { width:100%; }
+	.w25.w25 { width:50%; }
+}
+@media only screen and (max-width:500px) {
+	.w25.w25 { width:100%; padding-right:0; }
+}
+.grid { clear:both; padding:10px; }
+.w100 { width:100%; }
+.w50 { width:50%; }
+.w25 { width:25%; }
+/*********************	
+	form
+*********************/
+textarea,
+input { display:block; width:100%;}
+/*********************
+	footer
+*********************/
+footer { color:#534d46; }
+#footerContent { text-align:center; }
+#footerContent li { display:inline-block; }
+#footerContent li:not(:last-child) { margin-right:10px;}
+.mainFooter { background-color:#f1eeea; margin-top:20px; clear:both; padding:20px;}
