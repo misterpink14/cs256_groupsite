@@ -19,7 +19,7 @@ a { text-decoration:none; }
 ********************/
 .card-title { display:block; font-weight:900; font-size:40px; text-align:center; margin-top:15px; padding-top:20px; padding-bottom:20px; border-top:1px solid #21201E; border-bottom:1px solid #21201E; max-width:100%;}
 .card-info { font-weight:600; margin-top:20px; text-align:center; max-width:100%;}
-.card { color:#21201E; border-radius:6px; box-shadow:0px 1px 1px rgba(0, 0, 0, .4); background-color:#fff; min-height:50px; padding:20px; width:100%; height:400px; position:relative; }
+.card { color:#21201E; border-radius:6px; box-shadow:0px 1px 1px rgba(0, 0, 0, .4); background-color:#fff; min-height:50px; padding:20px; width:100%;  position:relative; }
 .card a { color:inherit; height:100%; width:100%; }
 .card:hover { background-color:#0C5C7D; color:#fff;}
 .card-btn { display:inline-block; color:#21201E; margin-top:20px; padding:10px; background-color:#4E4E4E; border-radius:3px; max-height:50px;text-align:center; font-weight:600; }
@@ -40,7 +40,7 @@ a { text-decoration:none; }
 	.w50 { width:100%; }
 	.w25.w25 { width:50%; }
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:500px) {
 	.w25.w25 { width:100%; padding-right:0; }
 }
 .grid { clear:both; padding:10px; }
