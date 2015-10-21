@@ -4,7 +4,7 @@
 ****************************************/
 *, *::before, *::after { box-sizing:inherit; }
 body,
-html { box-sizing:border-box; background-color:#f1eeea; height:100vh; }
+html { box-sizing:border-box; background-color:#f1eeea; }
 body { background-color:#E4E2DA; color:#21201E; font:16px/1.45 "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; }
 body, html, li, ul, h1, h2, h3, p { padding:0px; margin:0; }
 li, ul { list-style:none; }
