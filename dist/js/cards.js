@@ -142,4 +142,3 @@ var AssignmentsGrid = React.createClass({
 	}
 });
 React.render(React.createElement(AssignmentsGrid, null), document.getElementById('assignment-cards'));
-//# sourceMappingURL=all.js.map

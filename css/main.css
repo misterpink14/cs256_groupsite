@@ -43,10 +43,10 @@ a { text-decoration:none; }
 @media only screen and (max-width:500px) {
 	.w25.w25 { width:100%; padding-right:0; }
 }
-.grid { clear:both; padding:10px; }
-.w100 { width:100%; }
-.w50 { width:50%; }
-.w25 { width:25%; }
+.grid { display:flex; flex-wrap:wrap; }
+.w100 { flex:1 0 100%; }
+.w50 { flex:0 0 50%; }
+.w25 { flex:0 0 25%; }
 /*********************	
 	form
 *********************/
